@@ -1,6 +1,6 @@
 {
   "name": "confianzaaztecaws",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -12,11 +12,13 @@
     "dotenv": "^4.0.0",
     "ejs": "~2.5.5",
     "express": "~4.14.1",
+    "ibm-watson": "^4.4.0",
     "morgan": "~1.7.0",
     "mysql2": "^1.6.5",
     "sequelize": "^4.37.6",
     "sequelize-cli": "^3.2.0",
     "serve-favicon": "~2.3.2",
+    "stream": "0.0.2",
     "twilio": "^3.32.0",
     "uniqid": "^5.0.3"
   }
