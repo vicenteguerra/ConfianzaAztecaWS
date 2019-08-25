@@ -3,9 +3,9 @@ let Models  = require('../../models/index');
 const SpeechToTextV1 = require('ibm-watson/speech-to-text/v1');
 var stream = require('stream');
 
-var speech_to_text = new SpeechToTextV1({
-    username: process.env.ibm_username,
-    password: process.env.ibm_password
+const speech_to_text = new SpeechToTextV1({
+  iam_apikey: process.env.ibm_api_key,
+  url: "https://stream.watsonplatform.net/speech-to-text/api"
 });
 
 let Voice = function(){
