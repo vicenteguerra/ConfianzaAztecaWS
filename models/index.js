@@ -3,14 +3,24 @@ require('dotenv').config();
 var fs        = require("fs");
 var path      = require("path");
 var Sequelize = require("sequelize");
-var env       = process.env.NODE_ENV || "development";
-var config = {};
+
+/* Database config */
+var config = {
+    "omitNull": false,
+    "timezone": "America/Mexico_City",
+    "paranoid": true,
+    "logging": false,
+    "dialect": "mysql",
+    "define": {
+        "freezeTableName": true,
+        "paranoid": true
+    }
+};
 
 config.host = process.env.database_host;
 config.password = process.env.database_password;
 config.username = process.env.database_username;
 config.database = process.env.database_dbname;
-config.dialect = "mysql";
 
 console.log(config);
 
