@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Authcode.beforeCreate(function (authcode) {
-        authcode.dataValues.client_id = uniqid('trust-');
+        authcode.dataValues.authcode_id = uniqid('ca');
     });
 
     Authcode.associate = function(models) {

@@ -22,8 +22,6 @@ config.password = process.env.database_password;
 config.username = process.env.database_username;
 config.database = process.env.database_dbname;
 
-console.log(config);
-
 var sequelize = new Sequelize(config.database, config.username, config.password, config);
 
 var db        = {};
