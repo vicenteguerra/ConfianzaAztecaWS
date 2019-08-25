@@ -1,5 +1,5 @@
 let Models  = require('../../models/index');
-let APIHelper  = require('../helpers/APIHelper').APIHelper;
+let APIHelper  = require('../helpers/ApiHelper').APIHelper;
 
 let User= function(){
     this.show = show;
