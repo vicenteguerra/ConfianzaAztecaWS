@@ -27,7 +27,8 @@ let verify = function (req, res) {
             timestamps: true,
             word_alternatives_threshold: 0.9,
             keywords: keywords,
-            keywords_threshold: 0.5
+            keywords_threshold: 0.5,
+            model: 'es-MX_BroadbandModel'
         };
         speech_to_text.recognize(params, function (error, transcript) {
             if (error) {
